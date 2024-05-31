@@ -8,3 +8,8 @@
 var message;
 message="Hello world!";
 console.log(message);
+
+/* Value of var can be changed */
+message="Hello Everyone";
+console.log(message);
+
