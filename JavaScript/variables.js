@@ -13,3 +13,6 @@ console.log(message);
 message="Hello Everyone";
 console.log(message);
 
+let message1
+message1="Hello India"
+console.log(message1)
