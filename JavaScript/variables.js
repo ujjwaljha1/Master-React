@@ -16,3 +16,12 @@ console.log(message);
 let message1
 message1="Hello India"
 console.log(message1)
+ 
+let name
+name="ujjwal"
+console.log(message1 +" "+ name)
+
+
+const number = 1;
+
+console.log(number);
