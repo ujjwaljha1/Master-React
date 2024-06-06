@@ -1,0 +1,13 @@
+.btn-red{
+    color: red;
+    background-color: black;
+}
+
+#form {
+    border: 2px solid black; /* border style: 2px width, solid line, black color */
+}
+
+.form p{
+    border: 2px solid brown;
+    color: gold;
+}
