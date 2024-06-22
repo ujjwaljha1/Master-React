@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Your allBrands array
 const allBrands = [
@@ -45,7 +45,9 @@ function App() {
 
     // Filter the list of brands to include only those that match the search query.
     // Convert each brand name to lowercase and check if it includes the search value.
-    const filtered = allBrands.filter(brand => brand.brandName.toLowerCase().includes(searchValue));
+    const filtered = allBrands.filter((brand) =>
+      brand.brandName.toLowerCase().includes(searchValue)
+    );
 
     // Update the 'filteredBrands' state with the filtered list of brands.
     setFilteredBrands(filtered);
@@ -55,11 +57,15 @@ function App() {
   return (
     <div>
       {/* Input field for searching brands. It is controlled by the 'search' state. */}
-      <input value={search} onChange={onSearchChange} placeholder='Search a brand' />
+      <input
+        value={search}
+        onChange={onSearchChange}
+        placeholder="Search a brand"
+      />
 
       {/* List of filtered brands. It maps over the 'filteredBrands' state and renders each brand in a <li> element. */}
       <ul>
-        {filteredBrands.map(brand => (
+        {filteredBrands.map((brand) => (
           // Each <li> element must have a unique 'key' prop, here using the brand's id.
           <li key={brand.id}>{brand.brandName}</li>
         ))}
