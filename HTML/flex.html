@@ -14,17 +14,45 @@
         padding: 10px;
         color: red;
         background-color: aqua;
-        margin: 30px;
+        margin: 30px 10px;
         text-align: center;
     }
     .container h1{
         color: gold;
     }
+    .flexcontainer{
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 10px;
+        border-radius: 10px;
+    }
 </style>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <H1>Hello world</H1>
         <p>THis is my world</p>
     </div>
+
+    <div class="flexcontainer">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div> -->
+
+    <div class="flexcontainer">
+        <div class="box1"></div>
+    </div>
+
+
 </body>
 </html>
