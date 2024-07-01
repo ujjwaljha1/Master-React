@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Links</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    nav ul{
+        display: flex;
+        color: white;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 10px;
+    }
+    .styled-link{
+        
+        text-decoration: none;
+    
+    }
+    .styled-link:hover{
+        color: red;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+    .styled-link:link{
+        color: green;
+       
+    }
+
+  </style>
+  <body>
+    <nav>
+      <img
+        src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+        alt="Gmail logo"
+      />
+      <ul>
+        <li><a href="#" class="styled-link">Home</a></li>
+        <li><a href="/about.html"class="styled-link">About</a></li>
+        <li><a href="/career.html"class="styled-link">career</a></li>
+        <li><a href="/contact.html"class="styled-link">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
